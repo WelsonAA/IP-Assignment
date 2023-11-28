@@ -1,0 +1,103 @@
+/* Reset CSS to ensure consistent rendering across browsers */
+html, body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, form, fieldset, input, textarea, button, blockquote {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: Arial, sans-serif; /* Change the font as needed */
+    line-height: 1.6;
+    background-color: #f5f5f5; /* Change to your preferred background color */
+    color: #333; /* Change to your preferred text color */
+}
+
+/* Navigation */
+.navbar {
+    background-color: #333; /* Change to your preferred navbar color */
+    color: #fff; /* Change to your preferred text color for the navbar */
+    padding: 10px 20px;
+    /* Add more styling properties like width, positioning, etc. */
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    padding: 100px 0;
+    /* Add more styling properties */
+}
+
+/* Footer */
+.footer {
+    background-color: #333; /* Change to your preferred footer color */
+    color: #fff; /* Change to your preferred text color for the footer */
+    padding: 20px;
+    text-align: center;
+    /* Add more styling properties */
+}
+
+/* Forms */
+.form-group {
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    /* Add more styling properties */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /* Add more styling properties */
+}
+
+/* General Classes */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    /* Add more styling properties */
+}
+
+.section {
+    padding: 40px 0;
+    /* Add more styling properties */
+}
+
+aside {
+    width: 25%; /* Adjust width as needed */
+    padding: 20px;
+    background-color: #f0f0f0;
+    margin-right: 20px;
+}
+
+article {
+    flex: 1;
+}
+
+/* Add more specific styling for individual elements or sections as needed */
