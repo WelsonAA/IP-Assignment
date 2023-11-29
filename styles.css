@@ -10,6 +10,11 @@ body {
     line-height: 1.6;
     background-color: #f5f5f5; /* Change to your preferred background color */
     color: #333; /* Change to your preferred text color */
+    background-image: url('asu background.jpg');
+    /* Set background size, position, and repeat properties */
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat-y;
 }
 
 /* Navigation */
@@ -43,12 +48,16 @@ body {
 
 /* Footer */
 .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     background-color: #333; /* Change to your preferred footer color */
     color: #fff; /* Change to your preferred text color for the footer */
     padding: 20px;
     text-align: center;
     /* Add more styling properties */
 }
+
 
 /* Forms */
 .form-group {
@@ -66,7 +75,7 @@ textarea {
     /* Add more styling properties */
 }
 
-button {
+button,submit_button {
     padding: 10px 20px;
     background-color: #333;
     color: #fff;
@@ -84,8 +93,9 @@ button {
     /* Add more styling properties */
 }
 
-.section {
-    padding: 40px 0;
+section {
+    padding: 50px ;
+    margin: 40px ;
     /* Add more styling properties */
 }
 
