@@ -14,7 +14,21 @@
             <ul>
                 <li><a href="home.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="courses.html">Courses</a></li>
+                <li class="course-sub-menu">
+                    <a href="courses.html">Courses</a>
+                    <ul>
+                        <li class="cess-sub-menu" onmouseover="showSublist()" onmouseout="hideSublist()">
+                            <a href="cess.html">Computer Engineering</a>
+                            <ul class="sublist" id="secondSublist">
+                                <li><a href="ip.html">Internet Programming</a></li>
+                                <li><a href="cn.html">Computer Networks</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Electrical Engineering</a></li>
+                        <li><a href="arch.html">Architectural Engineering</a></li>
+
+                    </ul>
+                </li>
                 <li><a href="admissions.html">Admissions</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="login.html">Login</a></li>
@@ -30,9 +44,8 @@
         <h2>Course Selection</h2>
         <label for="courses">Choose a course:</label>
         <select id="courses" name="courses">
-            <option value="course1">Course 1</option>
-            <option value="course2">Course 2</option>
-            <option value="course3">Course 3</option>
+            <option value="course1">Computer Engineering</option>
+            <option value="course2">Architectural Engineering</option>
             <!-- Add more course options -->
         </select>
     </section>
@@ -40,29 +53,25 @@
     <section>
         <h2>Course Details</h2>
         <article>
-            <h3>Course 1</h3>
-            <img src="path/to/course1.jpg" alt="Course 1">
-            <p>Details about Course 1.</p>
+            <h3>Computer Engineering</h3>
+            <p>Computer Engineers are rich</p>
             <ul>
-                <li>Feature 1</li>
-                <li>Feature 2</li>
-                <li>Feature 3</li>
+                <li>Data Structures</li>
+                <li>Operating Systems</li>
                 <!-- Add more features -->
             </ul>
-            <a href="#">Enroll Now</a>
+            <a href="cess.html">Enroll Now</a>
         </article>
 
         <article>
-            <h3>Course 2</h3>
-            <img src="path/to/course2.jpg" alt="Course 2">
-            <p>Details about Course 2.</p>
+            <h3>Architectural Engineering</h3>
+            <p>Architecture is fun</p>
             <ul>
-                <li>Feature 1</li>
-                <li>Feature 2</li>
-                <li>Feature 3</li>
+                <li>Design</li>
+                <li>Draw</li>
+                <li>Coloring</li>
                 <!-- Add more features -->
             </ul>
-            <a href="#">Enroll Now</a>
         </article>
 
         <!-- Add more articles for other courses -->

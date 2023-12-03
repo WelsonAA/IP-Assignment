@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ain Shams University</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <script src="script.js"></script> <!-- Link to your JS file -->
+</head>
+<body>
+
+<header class="navbar">
+    <div class="container">
+        <h1>Ain Shams University</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="course-sub-menu">
+                    <a href="courses.html">Courses</a>
+                    <ul>
+                        <li class="cess-sub-menu" onmouseover="showSublist()" onmouseout="hideSublist()">
+                            <a href="cess.html">Computer Engineering</a>
+                            <ul class="sublist" id="secondSublist">
+                                <li><a href="ip.html">Internet Programming</a></li>
+                                <li><a href="cn.html">Computer Networks</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Electrical Engineering</a></li>
+                        <li><a href="arch.html">Architectural Engineering</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="admissions.html">Admissions</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+<article class="highlight-text">I love Internet Programming</article>
+<div class="container">
+    <section class="hero">
+        <img src="html_css_js.jpg" alt="University Logo" style="width: 500px">
+        <p>Prepare for the future of Web</p>
+    </section>
+
+    <section class="features">
+        <div class="feature">
+            <h3>Dr Dina</h3>
+            <p>Professor</p>
+        </div>
+        <div class="feature">
+            <h3>Eng Riham</h3>
+            <p>TA</p>
+        </div>
+
+    </section>
+</div>
+<footer class="footer">
+    <div class="container">
+        <p >&copy;  University Name. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>
+
+
+
+

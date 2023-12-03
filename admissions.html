@@ -1,67 +1,91 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Admissions</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
-</head>
-<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Admissions</title>
+        <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
 
-<header class="navbar">
+    </head>
+    <body>
+
+    <header class="navbar">
+        <div class="container">
+            <h1>Ain Shams University</h1>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="course-sub-menu">
+                        <a href="courses.html">Courses</a>
+                        <ul>
+                            <li class="cess-sub-menu" onmouseover="showSublist()" onmouseout="hideSublist()">
+                                <a href="cess.html">Computer Engineering</a>
+                                <ul class="sublist" id="secondSublist">
+                                    <li><a href="ip.html">Internet Programming</a></li>
+                                    <li><a href="cn.html">Computer Networks</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Electrical Engineering</a></li>
+                            <li><a href="arch.html">Architectural Engineering</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
     <div class="container">
-        <h1>Ain Shams University</h1>
-        <nav>
+        <h1>Admissions</h1>
+
+        <section>
+            <h2>Application Process</h2>
+            <p>Information about the application process for admissions.</p>
+            <ol>
+                <li>Step 1: Complete the online application form.</li>
+                <li>Step 2: Submit required documents.</li>
+                <li>Step 3: Pay application fees.</li>
+                <!-- Add more steps -->
+            </ol>
+        </section>
+
+        <section>
+            <h2>Requirements</h2>
             <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="courses.html">Courses</a></li>
-                <li><a href="admissions.html">Admissions</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="login.html">Login</a></li>
+                <li>High school diploma or equivalent</li>
+                <li>Standardized test scores</li>
+                <li>Letters of recommendation</li>
+                <!-- Add more admission requirements -->
             </ul>
-        </nav>
+        </section>
+
+        <section>
+            <h2>Scholarships</h2>
+            <p>Details about available scholarships and financial aid.</p>
+            <p>Contact the admissions office for more information.</p>
+            <details>
+                <summary>Important Dates</summary>
+                <ul>
+                    <li>Application Deadline: August 31, 2023</li>
+                    <li>Scholarship Application Deadline: June 30, 2023</li>
+                    <!-- Add more important dates -->
+                </ul>
+            </details>
+        </section>
+
+        <!-- Add more sections as needed -->
+
+
     </div>
-</header>
-
-<div class="container">
-    <h1>Admissions</h1>
-
-    <section>
-        <h2>Application Process</h2>
-        <p>Information about the application process for admissions.</p>
-        <ol>
-            <li>Step 1: Complete the online application form.</li>
-            <li>Step 2: Submit required documents.</li>
-            <li>Step 3: Pay application fees.</li>
-            <!-- Add more steps -->
-        </ol>
-    </section>
-
-    <section>
-        <h2>Requirements</h2>
-        <ul>
-            <li>High school diploma or equivalent</li>
-            <li>Standardized test scores</li>
-            <li>Letters of recommendation</li>
-            <!-- Add more admission requirements -->
-        </ul>
-    </section>
-
-    <section>
-        <h2>Scholarships</h2>
-        <p>Details about available scholarships and financial aid.</p>
-        <p>Contact the admissions office for more information.</p>
-    </section>
-
-    <!-- Add more sections as needed -->
-
-</div>
-
-<footer class="footer">
-    <div class="container">
-        <p>&copy; 2023 Ain Shams University. All rights reserved.</p>
-    </div>
-</footer>
-
-</body>
-</html>
+    <button onclick="changeFont()"  class="font-change-btn">Change Font</button>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 Ain Shams University. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script> <!-- Link to your JS file -->
+    </body>
+    </html>

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>About Us</title>
     <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <script src="script.js"></script> <!-- Link to your JS file -->
 </head>
 <body>
 
@@ -14,7 +15,21 @@
             <ul>
                 <li><a href="home.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="courses.html">Courses</a></li>
+                <li class="course-sub-menu">
+                    <a href="courses.html">Courses</a>
+                    <ul>
+                        <li class="cess-sub-menu" onmouseover="showSublist()" onmouseout="hideSublist()">
+                            <a href="cess.html">Computer Engineering</a>
+                            <ul class="sublist" id="secondSublist">
+                                <li><a href="ip.html">Internet Programming</a></li>
+                                <li><a href="cn.html">Computer Networks</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Electrical Engineering</a></li>
+                        <li><a href="arch.html">Architectural Engineering</a></li>
+
+                    </ul>
+                </li>
                 <li><a href="admissions.html">Admissions</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="login.html">Login</a></li>
@@ -32,14 +47,17 @@
     <article>
         <section>
             <h2>Our Story</h2>
-            <p>Content about the history and background of our organization.</p>
+            <p>Our organization, founded in 1995, has a rich history deeply rooted in the ethos of education and community empowerment. From our humble beginnings as a local initiative, we've evolved into a global educational institution dedicated to fostering knowledge, innovation, and inclusivity.</p>
+            <p>Over the years, our commitment to academic excellence and societal impact has driven us to expand our programs, collaborating with leading scholars and industry experts. Our diverse community of students and faculty hails from various backgrounds, contributing to a vibrant tapestry of ideas and perspectives.</p>
+            <p>We embrace a holistic approach to education, striving to nurture not only academic proficiency but also critical thinking, creativity, and ethical leadership. Through cutting-edge research and immersive learning experiences, we empower our students to tackle real-world challenges and drive positive change in their communities.</p>
+            <p>As we continue on our journey, we remain dedicated to providing an environment that encourages intellectual curiosity, fosters personal growth, and instills a lifelong passion for learning.</p>
+
             <!-- Consideration for images -->
-            <img src="path/to/image1.jpg" alt="Image 1">
             <!-- Space for additional content or images -->
 
             <!-- Consideration for a video -->
             <video controls>
-                <source src="path/to/video.mp4" type="video/mp4">
+                <source src="university_video.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </section>

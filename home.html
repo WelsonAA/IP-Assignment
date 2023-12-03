@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Ain Shams University</title>
     <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <script src="script.js"></script> <!-- Link to your JS file -->
 </head>
 <body>
 
@@ -14,19 +15,35 @@
             <ul>
                 <li><a href="home.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="courses.html">Courses</a></li>
-                <li><a href="admissions.html">Admissions</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="login.html">Login</a></li>
+                <li class="course-sub-menu">
+                    <a href="courses.html">Courses</a>
+                    <ul>
+                        <li class="cess-sub-menu" onmouseover="showSublist()" onmouseout="hideSublist()">
+                            <a href="cess.html">Computer Engineering</a>
+                            <ul class="sublist" id="secondSublist">
+                                <li><a href="ip.html">Internet Programming</a></li>
+                                <li><a href="cn.html">Computer Networks</a></li>
+                            </ul>
+                </li>
+                        <li><a href="#">Electrical Engineering</a></li>
+                        <li><a href="arch.html">Architectural Engineering</a></li>
+
+            </ul>
+            </li>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
             </ul>
         </nav>
     </div>
 </header>
 
+
+
 <div class="container">
     <section class="hero">
         <h2>Welcome to Ain Shams University</h2>
-        <img src="asu%20logo.png" alt="University Logo">
+        <img onclick="changeLogo()" src="university_logo.png" alt="University Logo">
         <p>Prepare for the future with our quality education and diverse courses.</p>
         <a href="courses.html" class="button">Explore Courses</a>
     </section>
@@ -49,7 +66,7 @@
 
 <footer class="footer">
     <div class="container">
-        <p>&copy; 2023 University Name. All rights reserved.</p>
+        <p >&copy;  University Name. All rights reserved.</p>
     </div>
 </footer>
 
